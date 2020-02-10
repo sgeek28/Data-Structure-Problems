@@ -1,0 +1,82 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Problem statement
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Design a divide-and-conquer algorithm for computing the number of levels in a binary tree.
+(In particular, the algorithm must return 0 and 1 for the empty and single-node trees, respec-
+tively.) Analyze the time efficiency class of your algorithm. Now, implement the algorithm
+you designed and find out the time taken an for empty, one-level, two-level and three-level
+binary tree. Compare it with the theoretical analysis that you would have done before.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+REQUIRED LIBRARIES:
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+<bits/stdc++.h>
+<stdio.h>
+<stdlib.h> 
+<chrono> 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+NAMESPACE USED
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+using namespace std
+using namespace std::chrono
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+PLATFORM(USED WHILE RUNNING CODE):
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+OS:Kali GNU/linux Rolling(64 bit)
+Processor: i5-7200U CPU @ 2.50GHz x 4
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+DESCRIPTION
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+A Tree is directed acyclic graph.Binary tree is a tree whose elements have at most 2 children.Since each element in a binary tree can have only 2 children, we typically name them the left and right child.A binary tree is represented by a pointer to the topmost node in tree. If the tree is empty, then value of root is NULL.A Tree node contains following parts.
+1. Data
+2. Pointer to left child
+3. Pointer to right child
+We will be doing analysis for complete binary tree and almost complete binary tree.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+CONCLUSION
+------------------------------------------------------------------------------------------------------------------------------------------------------
+S.No| Nodes | Level |Time taken for level count|   0 Level time    | 1 Level time          |   2 Level time       |   3 Level time  |Empirical analysis
+    |  (n)  | count |                          |                   |                       |                      |                 |assume c=9.5  
+------------------------------------------------------------------------------------------------------------------------------------------------------
+1.  | 12    |   4   |36 Nanoseconds            |   21 Nanoseconds  |	  25 Nanoseconds   |   24 Nanoseconds     |   22 Nanoseconds| 28.5 ns
+------------------------------------------------------------------------------------------------------------------------------------------------------
+				               |	           |			   |		          |                 |
+2.  | 123   |   7   |43 Nanoseconds            |   18 Nanoseconds  |  	  25 Nanoseconds   |   22 Nanoseconds     |   27 Nanoseconds| 28.5 ns 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+				               |		   |	                   |		          |                 |
+3.  | 1234  |   11  |80 Nanoseconds            |   25 Nanoseconds  |   	  25 Nanoseconds   |   22 Nanoseconds     |   27 Nanoseconds| 28.5 ns
+------------------------------------------------------------------------------------------------------------------------------------------------------
+				               |		   |	                   |		          |                 |
+4.  | 12345 |   14  |266 Nanoseconds           |   34 Nanoseconds  |  	  37 Nanoseconds   |   22 Nanoseconds     |   27 Nanoseconds| 28.5 ns
+------------------------------------------------------------------------------------------------------------------------------------------------------
+				      
+
+->From above table we can see as the number of nodes increases the time taken to calculate total number of levels in binary tree is also increasing.
+
+-> Also,for 0 level tree the time is increasing with more number of nodes.
+->For 1 level tree the time is almost same i.e consistent for even higher number of nodes and more number of levels in binary tree.
+-> For 2 level tree also the time is same even if we have increased nodes and thus levels of a binary tree.
+-> For 3 level tree also the time is stable.
+
+-> After comparing our program execution time with the empirical analysis execution time we found that for higher levels and more number of nodes
+it's approximately same.
+
+So our algorithm is running in accordance with the theoritical analysis which says that it will take O(n) time where n is no of the nodes
+assuming c=9.5 for our experiment. 
+
+
+
+
+
+
+
+
+
+
+
+
