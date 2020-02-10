@@ -1,8 +1,0 @@
---------------------------------------------------------------------------------------------------
-Problem Statement
---------------------------------------------------------------------------------------------------
-
-Given number of items,capacity of knapsack.User have to provide profit and weight for each item.
-Calculate maximum profit using Dynamic Programming.
-
-

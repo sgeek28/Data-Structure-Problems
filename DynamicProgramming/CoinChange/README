@@ -1,9 +1,0 @@
---------------------------------------------------------------------------------------------------
-Problem Statement
---------------------------------------------------------------------------------------------------
-
-User can provide number of coins assuming each denomination is having infinite availability, 
-the amount for which change needs to be computed and also number of denominations of each coin.
-Minimum number of coins were calculated to find sum.
-
-

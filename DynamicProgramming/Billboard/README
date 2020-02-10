@@ -1,9 +1,0 @@
---------------------------------------------------------------------------------------------------
-Problem Statement
---------------------------------------------------------------------------------------------------
-
-User can provide length of highway assuming it is in miles, number of billboards to place on highway, range within
-which no two billboards can be placed, position and revenue associated with each billboard.The program will
-calculate maximum revenue generated using dynamic programming.
-
-
