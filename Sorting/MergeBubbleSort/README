@@ -1,0 +1,88 @@
+Problem Statement:
+----------------------------------------------------------------------
+Use the skeleton of the codes including here for writing your programs filling in the functions required.The sorting functions that you write must be modeled on the illustration of the Bubble sort shown. Assume N is the input array that you use for evaluating the programs.
+
+----------------------------------------------------------------
+REQUIRED LIBRARIES:
+----------------------------------------------------------------
+<bits/stdc++.h>
+<sys/time.h>
+<iostream>
+<stdlib.h>
+
+---------------------------------------------------------
+PLATFORM(USED WHILE RUNNING CODE):
+---------------------------------------------------------
+OS:Kali GNU/linux Rolling(64 bit)
+Processor: i5-7200U CPU @ 2.50GHz x 4
+
+---------------------------------------------------------
+INPUT PARAMETERS:-
+---------------------------------------------------------
+A aaray populated with random numbers(above
+10k values) ranging from 0-1000 was given to insertionSort,
+MergeSort,BubbleSort and MyownSort to find time complexity 
+of our program in worst,average and best case.
+----------------------------------------------------------
+No.|Sorting algo  | Best case | Average case | Worst case|
+----------------------------------------------------------
+1. |Insertion sort| O(n)      | O(n^2)       | O(n^2)    |
+2. |Merge sort    | O(nlogn)  | O(nlogn)     | O(nlogn)  |
+3. |Bubble sort   | O(n)      | O(n^2)       | O(n^2)    |
+4. |Myown sort    | O(n)      | O(n^2)       | O(n^2)    |
+
+----------------------------------------------------------
+Above is time complexity for all sorting algorithms.
+
+
+CONCLUSION
+-------------------------------------------------------------------------------------------------------------------------------------------------
+We have analysed entire behaviour of program in form of table as shown below:
+
+			Bubble Sort      |        Myown Sort           |   Merge Sort        |   Insertion Sort       |   SemiBubble Sort        |
+Input------------------ Timeval----------|---------Timeval-------------------Timeval----------------Timeval-----------------Timeval---------------
+1. 10                 3 microseconds     |       2 microseconds        |   5 microseconds    |   1 microseconds       |      2 microseconds      |
+--------------------------------------------------------------------------------------------------------------------------------------------------
+2. 100                192 microseconds   |       142 microseconds      |   57 microseconds   |   42 microseconds      |      142 microseconds    |
+--------------------------------------------------------------------------------------------------------------------------------------------------
+3. 1000               13173 microseconds |       5688 microseconds     |   550 microseconds  |   3109 microseconds    |      5688 microseconds   |
+--------------------------------------------------------------------------------------------------------------------------------------------------
+4. 4620               126200 microseconds|       56304 microseconds    |   749 microseconds  |   15486 microseconds   |      56304 microseconds  |
+--------------------------------------------------------------------------------------------------------------------------------------------------
+4. 10000              441331 microseconds|       278778 microseconds   |   1693 microseconds |   69352 microseconds   |      278778 microseconds |
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+From above we can analyse that as input size increases time to sort array is also increasing
+in case of every sort mentioned above.Myown sort is optimized version of bubble sort.We can see from above
+that for larger values of input size it is taking half of the time as bubble sort is taking.
+Insertion sort is performing worst among all i.e. taking more time than all others.
+
+Semi Bubble Sort is implemented as follows:
+Modified bubble sort is just an enhancement to the bubble sort algorithm.It won't improve the
+algorithm worst case running time but on an average case or for nearly sorted array it is a 
+great improvement as it skips many passes.
+Modified bubble sort keeps count of the number of adjacent inversions in each pass and when 
+there are no adjacent inversions the algorithm halts as the list will be sorted if there are
+no adjacent inversions.
+
+For N=4620 Bubble sort is taking more than 10 seconds, we can see from above.
+
+We have improved bubble sort by factor of 2 as we can see above . 
+But this improved sorting is not better than merge sort.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

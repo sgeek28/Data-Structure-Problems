@@ -1,0 +1,51 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------
+PROBLEM STATEMENT
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Write programs to count the number of inversions in a given array using the brute force
+approach and using the algorithm applying the merge-sort discussed in the class (with time
+complexities O(n 2 ) and O(n lg n) respectively). Compare both the programs with timing
+analysis with input size starting with n = 10 upto n = 10 5 . Comment on the results obtained.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Platform:
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+OS:Kali GNU/linux Rolling(64 bit)
+Processor: i5-7200U CPU @ 2.50GHz x 4
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Library Used:
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+include <chrono>
+include <vector>
+include <fstream>
+include <iostream> 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+SUMMARY OF EXECUTION
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+S.No   |  Elements present  |Inversions and time taken by brute force(us) |Inversions and time taken by count_inversion(us) 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ 1.    |   9                |             20 and 46 us                    |                   20 and 6us               
+----------------------------------------------------------------------------------------------------------------------------------------------------      
+ 2.    |   89               |             1926 and 252us                  |                  1926 and 90us                                 
+----------------------------------------------------------------------------------------------------------------------------------------------------   
+ 3.    |   2489             |             1547553 and 32608us             |                1547553 and 513us
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ 4.    |  24890             |            155149258 and 2844088us          |                155149258 and 5784us               
+----------------------------------------------------------------------------------------------------------------------------------------------------	
+CONCLUSION:
+
+->In this Assignment we have two algorithm Brute Force and count_inversion_merge Algorithm for counting the number of inversions. 
+Brute force has time complexity O(n^2) in worst case and O(n) in best case ,count_inversion has time complexity O(nlog n) in every case.
+
+->No of inversion will remain same in both the algorithm.
+
+->We can clearly see the difference between both the algorithms, When the number of elements increases time taken by brute force drastically increases but count_inversion algo doesn't increase drastically and is much less as compared to brute force algo.
+
+->We can see that the time taken by our program follows the asymptotic time complexity of both the methods for example when N=2489 then for brute force, time taken=32608us and now when number of elements increases almost 10 times i.e when N=24890 then time=2844088us which shows that time is increased 100 times i.e O(10^2) the original value.
+
+->For count_inversion_merge algo when N=2489, time taken=513us and now when number of elements increases almost 10 times i.e when N=24890 then time taken = 5784us which shows that time is increased almost 40 times. 
+
+ 

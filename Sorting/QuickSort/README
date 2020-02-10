@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------
+Problem Statement
+
+Different partition routine is used .One for normal quick sort,hoare quick sort and median quick sort
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+Number of input considered
+10000
+
+Time taken by Hoare quick sort: 4016 Microseconds
+
+Time taken by Normal quick sort: 3899 Microseconds
+---------------------------------------------------------------------------
+Number of input considered 
+100000
+
+Time taken by Hoare quick sort: 49052 Microseconds
+
+Time taken by Normal quick sort: 51997 Microseconds
+---------------------------------------------------------------------------
+Number of input considered
+1000000
+
+Time taken by Hoare quick sort: 547997 Microseconds
+
+Time taken by Normal quick sort: 666148 Microseconds
+---------------------------------------------------------------------------
+Number of input considered 
+10000000
+
+Time taken by Hoare quick sort: 6108365 Microseconds
+
+Time taken by Normal quick sort: 18704902 Microseconds
+
