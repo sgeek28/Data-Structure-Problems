@@ -1,7 +1,6 @@
-
 Problem Statement:
 -----------------------------------------------------------------
-A program for Insertion sort and MergeSort to count number of 
+Write a program for Insertion sort,Merge sort to count number of 
 exchanges/swaps required to sort the input data.
 Consider the worst case, the best case and the average case inputs
 to test your program. 
@@ -67,26 +66,26 @@ CONCLUSION:
 --------------------------------------------------------------
 We have analysed entire behaviour of program in form of table as shown below:
 
-			Insertion Sort						                                                              Merge Sort
+			Insertion Sort						                       Merge Sort
    Input --------------------Chrono-----------Timeval----------No of Swaps--|-------Chrono----------Timeval-------------No of swaps--------
-1. 10--Best case:     3 microseconds     4 microseconds         0           | 8 microsecods	   18 microsecods	              0
-	Average case:       14 microseconds    32 microseconds        27          | 8 microsecods	   31 microsecods               0
- 	Worst case:          5 microseconds	   6 microseconds         45	        | 7 microsecods        25 microsecods           0
+1. 10--Best case:     3 microseconds     4 microseconds         0           | 8 microsecods	   18 microsecods	    0
+	Average case: 14 microseconds    32 microseconds        27          | 8 microsecods	   31 microsecods           0
+ 	Worst case:   5 microseconds	 6 microseconds         45	    | 7 microsecods        25 microsecods           0
 ---------------------------------------------------------------------------------------------------------------------------------------	
 
 2. 100--Best case:    5 microseconds      6 microseconds        0           | 14 microsecods       29 microsecods           0
-	Average case:       106 microseconds   124 microseconds       2353        | 30 microsecods       52 microsecods           0
-	Worst case:         133 microseconds	 134 microseconds       4950        | 29 microsecods	     37 microsecods           0
+	Average case: 106 microseconds   124 microseconds       2353        | 30 microsecods       52 microsecods           0
+	Worst case:   133 microseconds	 134 microseconds       4950        | 29 microsecods	   37 microsecods           0
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 3. 1000-Best case:    38 microseconds    39 microseconds        0           | 222 microsecods      229 microsecods          0
-	Average case:       6657 microseconds  6663 microseconds      256368      | 252 microsecods      259 microsecods          0
-	Worst case:         12614 microseconds 12615 microseconds     499462      | 258 microsecods      265 microsecods          0
+	Average case: 6657 microseconds  6663 microseconds      256368      | 252 microsecods      259 microsecods          0
+	Worst case:   12614 microseconds 12615 microseconds     499462      | 258 microsecods      265 microsecods          0
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-4. 10000-Best case:  82 microseconds	   82 microseconds	          0	      | 738 microsecods     746 microsecods           0
-	Average case:      181153 microseconds 181169 microseconds  24925183      | 805 microsecods     813 microsecods           0
-	Worst case:        362207 microseconds 362208 microseconds  49995000      | 809 microsecods     817 microsecods           0
+4. 10000-Best case:   82 microseconds	   82 microseconds	0	    | 738 microsecods     746 microsecods           0
+	Average case: 181153 microseconds  181169 microseconds  24925183    | 805 microsecods     813 microsecods           0
+	Worst case:   362207 microseconds  362208 microseconds  49995000    | 809 microsecods     817 microsecods           0
 ---------------------------------------------------------------------------------------------------------------------------------------	
 
 For Best case:
@@ -100,23 +99,23 @@ Asymptotic and Emperical time complexity comparision:
 ---------------------------------------------------------------------------------------------------------------------------------------
 		Insertion		Best case: O(n)			Average case: O(n^2)			Worst case:O(n^2)
 			         Emperical    |	  Asymptotic         Emperical     |  Asymptotic         Emperical    |    Asymptotic
-Input:	10				3         |    3                   14          |     14               5           |      5
-        100       5         |    30                  106         |     1400             133         |      500
-	      1000      38        |    300                 6657        |     140000           12614       |      50000
-	      10000			82        |    3000		       181153            |     14000000         362207      |      5000000
+Input:	10				3     |    3                   14          |     14               5           |      5
+        100                             5     |    30                  106         |     1400             133         |      500
+	1000                            38    |    300                 6657        |     140000           12614       |      50000
+	10000				82    |    3000		       181153      |     14000000         362207      |      5000000
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------
 		Merge Sort		Best case: O(nlogn)			Average case: O(nlogn)			Worst case:O(nlogn)
 			         Emperical     |    Asymptotic          Emperical    |  Asymptotic         Emperical    |    Asymptotic
-Input:	10				8          |    24                   8           |     40              7            |      21
-        100       14         |    700                  30          |     700             29           |      700
-	      1000      222        |    10000                252         |     10000           258          |      10000
-	      10000		  738        |    17000		             805         |     80000          809           |      17000
+Input:	10				8      |    24                   8           |     40              7            |      21
+        100                             14     |    700                  30          |     700             29           |      700
+	1000                            222    |    10000                252         |     10000           258          |      10000
+	10000				738    |    17000		 805         |     80000          809           |      17000
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-1. From above we can see that Emprirical time complexity is very less as compared to asymptotic time complexity, but as we are increasing our input size both value are getting close to each other.In our analysis we have taken base input to be 10 to compared in  our algorithm.That's why we are getting difference in our output between Empirical and Asymptotic analysis, but if we will take base to be 10000 then the difference between them will reduce .
+1. From above we can see that Empirical time complexity is very less as compared to asymptotic time complexity, but as we are increasing our input size both value are getting close to each other.In our analysis we have taken base input to be 10 to compared in  our algorithm.That's why we are getting difference in our output between Empirical and Asymptotic analysis, but if we will take base to be 10000 then the difference between them will reduce .
 example: if we 10000 as base for average case our empical analysis gives us 181152 in insertion and 805 in merge sort.
 But as we increase our input size to 10 times our time should have increased by 100 time because of O(n^2) in case of insertion sort so our output should be 1811520 and our time complexity in 100000 is 181331 is almost comparable.
 In case of merge sort as we will be increasing our input size by 10 times because O(nlogn) our output should be 17000 and our time complexity in 
