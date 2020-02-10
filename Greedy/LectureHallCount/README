@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------------------------
+Problem Statement
+--------------------------------------------------------------------------------------------------
+
+Suppose that we have a set of activities to schedule amongst a large number of lecture halls.
+We wish to schedule all the activities using as few lecture halls as possible. Give an efficient
+greedy algorithm to determine which activity should use which lecture hall and implement
+this algorithm.
+

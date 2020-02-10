@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------------------------
+Problem Statement
+--------------------------------------------------------------------------------------------------
+
+Suppose the job of a firm is to manage the construction of billboards on the Jammu-Srinagar
+Highway runs South-North for M kms. The possible sites for the billboards are given by
+numbers x 1 , x 2 , x 3 , x 4 , x 5 ,. x n each in the interval [0M ]. x i ’s are indicating the position of
+the billboards along the Highway in kms, measured from its western end. If it is decided to
+place a billboard at location x i , then the firm receives a revenue of r i > 0. Regulations of the
+JK Govt require that no two of the billboards be within less than or equal to 5 kms of each
+other. Thus, as part of the optimization problem, the firm has to decide where to place the
+billboards at a subset of the sites x 1 , x 2 , x 3 , x 4 , x 5 ,. x n so as to maximize the total revenue,
+subject to this constraint. Give an algorithm that takes in an instance of this problem as
+input and returns the maximum total revenue that can be obtained from any valid subset of
+sites. Give its running time also. Implement the algorithm that you designed and analyze its
+time complexity.
+An example : Suppose M = 20, n = 4 , [x 1 , x 2 , x 3 , x 4 ] = [6, 7, 12, 14] , [r 1 , r 2 , r 3 , r4] =
+[5, 6, 5, 1]. Then, what would be the optimal solution ?
+
+
+In the above implemented code greedy approach is tried,which may not be optimal solution in few test cases.
+
+

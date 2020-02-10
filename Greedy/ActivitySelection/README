@@ -1,0 +1,11 @@
+--------------------------------------------------------------------------------------------------
+Problem Statement
+--------------------------------------------------------------------------------------------------
+
+This concerns the first activity selection problem discussed in the class with the objective
+function to select maximal set of mutually compatible activities out of a given set of activities
+with a defined start time and finish times. Suppose that instead of selecting the first activity
+to finish, we instead select the last activity to start that is compatible to all the previous
+activities. Write a program that implements this algorithm.
+
+
